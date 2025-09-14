@@ -1,0 +1,31 @@
+/* A basic, web-safe font stack for the entire body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #1a1a1a;
+}
+
+/* -------------------- Font Style Examples -------------------- */
+.italic-text {
+    /* Uses the italic version of the font if available. */
+    font-style: italic;
+    color: #c0392b;
+}
+
+.oblique-text {
+    /* Slants the regular version of the font at a specified angle. */
+    font-style: oblique 30deg;
+    color: #2980b9;
+}
+
+.normal-text {
+    /* Resets the font style to normal, useful for overriding inherited styles. */
+    font-style: normal;
+    color: #27ae60;
+}

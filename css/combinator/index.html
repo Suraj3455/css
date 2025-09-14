@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="descendant-combinator">
+        <h2>Descendant Combinator</h2>
+        <p>This paragraph will be styled because it's a descendant of `div`.</p>
+        <div>
+            <p>This paragraph will also be styled.</p>
+            <span>
+                <p>And so will this deeply nested paragraph.</p>
+            </span>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="child-combinator">
+        <h2>Child Combinator</h2>
+        <p>This paragraph is a direct child of the `div` and will be styled.</p>
+        <div>
+            <p>This paragraph is also a direct child and will be styled.</p>
+        </div>
+        <div>
+            <span>
+                <p>This paragraph is NOT a direct child, so it will not be styled.</p>
+            </span>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="sibling-combinators">
+        <h2>Sibling Combinators</h2>
+        <div>
+            <h3>Adjacent Sibling</h3>
+            <p>This paragraph is immediately preceded by an `h3` and will be styled by `+`.</p>
+            <p>This paragraph is not immediately preceded by an `h3` and will not be styled by `+`.</p>
+        </div>
+        
+        <div>
+            <h3>General Sibling</h3>
+            <p>This paragraph will be styled by `~`.</p>
+            <span>Some other content.</span>
+            <p>This paragraph, also a sibling, will be styled by `~`.</p>
+        </div>
+    </section>
+
+</body>
+</html>

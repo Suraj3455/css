@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* -------------------- Link Pseudo-classes -------------------- */
+.links-section a {
+    text-decoration: none;
+    color: #3498db; /* Default link color */
+}
+
+/* Styles a link that hasn't been visited yet */
+.links-section a:link {
+    color: #3498db;
+}
+
+/* Styles a link that has been visited */
+.links-section a:visited {
+    color: #9b59b6;
+}
+
+/* Styles the link when the mouse hovers over it */
+.links-section a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* Styles the link when it's being clicked */
+.links-section a:active {
+    color: #e74c3c;
+}
+
+/* -------------------- Structural Pseudo-classes -------------------- */
+.list-items li {
+    padding: 5px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+}
+
+/* Styles the first child element in the list */
+.list-items li:first-child {
+    font-weight: 100;
+    color: #ff0066;
+}
+
+/* Styles the last child element in the list */
+.list-items li:last-child {
+    font-style: italic;
+    color: #ff2b13;
+}
+
+/* Styles every even-numbered child (2, 4, etc.) */
+.list-items li:nth-child(even) {
+    background-color: #00ccff;
+}
+
+/* -------------------- Form Pseudo-classes -------------------- */
+.form-section input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Styles the input field when it has focus */
+.form-section input:focus {
+    border-color: #3498db;
+    outline: none; /* Removes the default outline */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Styles a checkbox when it is checked */
+.form-section input:checked + label {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Styles a valid email input */
+.form-section input:valid {
+    border-color: #27ae60;
+}
+
+/* Styles an invalid email input */
+.form-section input:invalid {
+    border-color: #ff0000;
+}

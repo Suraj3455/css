@@ -1,0 +1,45 @@
+/* A font stack is a list of font families in order of preference. The browser will
+   use the first font it can find. The last entry should always be a generic family. */
+
+body {
+    font-family: Arial, sans-serif; /* A basic, web-safe sans-serif stack for the entire body */
+    line-height: 1.6;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    /* A classic serif font stack for headings. Serif fonts have small lines at the ends
+       of characters and are often seen in books and newspapers. */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #1a1a1a;
+}
+
+.body-text {
+    /* Another sans-serif stack, showing a different preference */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+.monospace-text {
+    /* A monospace font stack, where every character takes up the same amount of space. */
+    font-family: "Courier New", Courier, monospace;
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cursive-text {
+    /* A cursive font stack for a decorative, handwritten feel. */
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+    font-size: 1.2rem;
+    color: #8855a9;
+}
+
+.fantasy-text {
+    /* A fantasy font stack for a highly stylized or fun appearance. */
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 1.5rem;
+    color: #4b868e;
+}

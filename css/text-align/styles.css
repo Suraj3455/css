@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    border-radius: 5px;
+}
+
+/* 1. Left Alignment */
+.align-left {
+    text-align: left;
+}
+
+/* 2. Right Alignment */
+.align-right {
+    text-align: right;
+}
+
+/* 3. Center Alignment */
+.align-center {
+    text-align: center;
+}
+
+/* 4. Justify Alignment */
+.align-justify {
+    text-align: justify;
+}

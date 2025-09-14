@@ -1,0 +1,55 @@
+/* General body and heading styles for a clean layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+p {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* -------------------- Font Variant Styles -------------------- */
+
+/* Normal text for comparison */
+.normal-text {
+    font-style: normal;
+}
+
+/* Demonstrates font-variant-caps: small-caps */
+.small-caps {
+    /* Converts lowercase letters to small capitals. */
+    font-variant-caps: small-caps;
+    color: #e74c3c;
+}
+
+/* Demonstrates font-variant-numeric: tabular-nums */
+.numeric-style {
+    /*
+     * Ensures all numbers have the same width, aligning them in columns.
+     * Useful for tables, price lists, or financial data.
+     */
+    font-variant-numeric: tabular-nums;
+    color: #27ae60;
+}
+
+/* Demonstrates font-variant-ligatures: common-ligatures */
+.ligature-style {
+    /*
+     * Enables common ligatures, which are single characters that
+     * represent a combination of two or more letters (e.g., fi, fl).
+     * The font must support these ligatures for this to work.
+     */
+    font-variant-ligatures: common-ligatures;
+    color: #8e44ad;
+}

@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.text-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 1.5em; /* Adds space between paragraphs */
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* 1. Line-Height Example */
+.line-height-example {
+    line-height: 10opx; /* A unitless value, which is a multiple of the font-size. This is best practice. */
+}
+
+/* 2. Letter-Spacing Example */
+.letter-spacing-example {
+    letter-spacing: 1.2px; /* A positive value adds space between letters. A negative value would bring them closer. */
+}
+
+/* 3. Word-Spacing Example */
+.word-spacing-example {
+    word-spacing: 8px; /* Adds a fixed amount of space between each word. */
+}

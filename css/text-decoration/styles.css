@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* 1. Remove Decoration */
+.no-decoration {
+    text-decoration: none;
+}
+
+/* 2. Underline */
+.underline-decoration {
+    text-decoration: underline;
+    text-decoration-color: #007bff; /* You can style the line */
+    text-decoration-style: wavy; /* You can change the line style */
+}
+
+/* 3. Overline */
+.overline-decoration {
+    text-decoration: overline;
+}
+
+/* 4. Line-Through */
+.line-through-decoration {
+    text-decoration: line-through;
+}
+
+/* This is a common use case to remove the default underline from links */
+a {
+    text-decoration: none;
+}

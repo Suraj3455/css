@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* -------------------- ::before and ::after -------------------- */
+
+.quote-section p {
+    font-style: italic;
+    color: #7d7979;
+    background-color: #e9e9e9;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+/* Adds a quotation mark icon before the paragraph content */
+.quote-section p::before {
+    content: "“";
+    font-size: 3em;
+    color: #3498db;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+
+/* Adds a closing quotation mark icon after the paragraph content */
+.quote-section p::after {
+    content: "”";
+    font-size: 3em;
+    color: #3498db;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
+
+/* -------------------- ::marker -------------------- */
+.list-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Styles the bullet points of a list */
+.list-section li::marker {
+    color: #3cd112;
+    font-size: 1.2em;
+    content:"#";
+}
+
+/* -------------------- ::first-letter and ::first-line -------------------- */
+.first-letter-section .intro-text {
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Styles the first letter of the paragraph */
+.first-letter-section .intro-text::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #27ae60;
+    float: left;
+    margin-right: 5px;
+}
+
+/* Styles the first line of the paragraph */
+.first-letter-section .intro-text::first-line {
+    font-style: italic;
+    color: #888;
+}

@@ -1,0 +1,123 @@
+
+
+
+/* Cascading Style sheet */
+/*  comment*/
+
+/* selector*/
+
+/* ELEMENT SELECTOR*/
+body{
+    background-color: rgb(155, 232, 255);
+}
+
+/* CLASS SELECTOR */
+
+.footer{
+    background-color: aliceblue;
+}
+/* id selector */
+
+#head{
+    background-color: rgb(149, 82, 0);
+}
+
+/* child selector   if directly   element then  if not then not  */
+
+main > p{
+    color:rgb(141, 18, 255);
+}
+
+/* decendant selector */
+
+main  h2{
+    color: rgb(255, 0, 0);
+}
+
+/* universal selector */
+
+*{
+    padding: auto;
+}
+
+/* psesudo selectoe */
+
+a:visited{
+    color: yellow;
+    
+
+}
+
+a:active{
+    color: red;
+}
+a:hover{
+    color: chocolate;
+}
+
+p:first-child{
+    color: green;
+}
+
+h1 ,h2, h3{
+    color: rgb(49, 223, 36);
+}
+/* last   give importance     inline more importance*/
+
+h1{
+    text-align:center;
+    text-decoration: rgb(255, 0, 0) underline;
+    font-weight: normal;
+}
+/* text decoration */
+
+a{
+    text-decoration: none;
+}
+/* font weight  100 to 900 */
+h2{
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* css units */
+
+/* attribute selector */
+
+a {
+  color: blue;
+}
+
+/* Internal links, beginning with "#" */
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* Links with "example" anywhere in the URL */
+a[href*="example"] {
+  background-color: silver;
+}
+
+/* Links with "insensitive" anywhere in the URL,
+   regardless of capitalization */
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+/* Links with "cAsE" anywhere in the URL,
+with matching capitalization */
+a[href*="cAsE" s] {
+  color: pink;
+}
+
+/* Links that end in ".org" */
+a[href$=".org"] {
+  color: red;
+}
+
+/* Links that start with "https://" and end in ".org" */
+a[href^="https://"][href$=".org"]
+{
+  color: green;
+}
+
+

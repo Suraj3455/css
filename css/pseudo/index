@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pseudo-classes in Action</h1>
+    </header>
+
+    <main>
+        <section class="links-section">
+            <h2>Link States</h2>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <hr>
+
+        <section class="structural-section">
+            <h2>Structural Selectors</h2>
+            <ul class="list-items">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+                <li>Fifth item</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="form-section">
+            <h2>Form States</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Click here to focus">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Enter a valid email">
+
+                <div>
+                    <input type="checkbox" id="subscribe">
+                    <label for="subscribe">Subscribe to newsletter</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

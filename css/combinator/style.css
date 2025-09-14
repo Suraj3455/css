@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #121a21;
+}
+
+/* -------------------- Descendant Combinator (space) -------------------- */
+.descendant-combinator div p {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* -------------------- Child Combinator (>) -------------------- */
+.child-combinator > p {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+/* -------------------- Adjacent Sibling Combinator (+) -------------------- */
+.sibling-combinators h3 + p {
+    background-color: #ecf0f1;
+    border-left: 5px solid #2ecc71;
+    padding: 10px;
+}
+
+/* -------------------- General Sibling Combinator (~) -------------------- */
+.sibling-combinators h3 ~ p {
+    color: #8e44ad;
+    text-decoration: underline;
+}
