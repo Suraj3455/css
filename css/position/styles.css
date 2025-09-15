@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    background-color: #ccffcc;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* 1. position: static */
+.static-container {
+    /* No position property needed as static is the default */
+    border: 2px solid #aaa;
+}
+
+/* 2. position: relative */
+.relative-container {
+    position: relative;
+    border: 2px solid #aaa;
+}
+
+.relative-box {
+    background-color: #ffcccc;
+    /* Shifting the box 20px from its normal top and 20px from its normal left position */
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/* 3. position: absolute */
+.absolute-container {
+    position: relative; /* The positioned ancestor for the absolute box */
+    height: 250px;
+    border: 2px solid #aaa;
+}
+
+.absolute-box {
+    background-color: #ccccff;
+    /* Positioned relative to the .absolute-container */
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+/* 4. position: fixed */
+.fixed-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-box {
+    background-color: #ffcc99;
+    /* Positioned relative to the viewport. */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    height: 100px;
+}

@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #add8e6;
+    border: 1px solid #005f7d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Example 1: Floats without clearing */
+.float-example .box1 {
+    float: left;
+}
+
+/* Example 2: Floats with clearing */
+.clear-example .box2,
+.clear-example .box3 {
+    float: left;
+}
+
+/* The "clearfix" is a common solution to contain floats and prevent container collapse. */
+.clearfix {
+    clear: both;
+}
+
+/* A more modern and robust "clearfix" using a pseudo-element: */
+/*
+.clear-example::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*/

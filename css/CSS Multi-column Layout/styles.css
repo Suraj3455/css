@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+/* Applying multi-column layout to the intro paragraph and main content */
+.intro-text, p {
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 2px solid #ccc;
+    text-align: justify;
+}
+
+/* Making a heading span across all columns */
+.spanning-heading {
+    column-span: all;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}

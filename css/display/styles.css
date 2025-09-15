@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Block Example */
+.block-example {
+    background-color: #ffcccc;
+    padding: 10px;
+    margin: 10px 0;
+    /* The default display value for a <div> is block, but we use a <span> here to demonstrate setting display: block. */
+    display: block; 
+}
+
+/* Inline Example */
+.inline-example {
+    background-color: #ccffcc;
+    padding: 10px;
+    /* This element is inline by default, but we specify it for clarity. */
+    display: inline;
+    /* These properties have no effect on an inline element */
+    width: 200px;
+    height: 50px;
+}
+
+/* Inline-Block Example */
+.inline-block-example {
+    background-color: #ccccff;
+    padding: 10px;
+    display: inline-block;
+    /* Width and height are respected */
+    width: 300px;
+    height: 50px;
+}
+
+/* None Example */
+.none-example {
+    background-color: #ffccff;
+    padding: 10px;
+    /* This element will not be visible on the page at all. */
+    display: none;
+}

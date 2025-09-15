@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Understanding CSS `float` and `clear`</h1>
+
+    <div class="container float-example">
+        <h2>Without Clear</h2>
+        <div class="box box1">Box 1</div>
+        <p>This paragraph is outside the floated container. Because the boxes are floated, they are taken out of the normal document flow. The container collapses, and this text starts right next to the floated boxes instead of below them. </p>
+    </div>
+
+    <div class="container clear-example">
+        <h2>With Clear</h2>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="clearfix"></div>
+        <p>This paragraph correctly appears below the floated boxes. The `clearfix` element inside the container forces it to expand its height, which ensures the following content starts below the floated elements.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Understanding the CSS `overflow` Property</h1>
+
+    <div class="container">
+        <h2>`overflow: visible` (Default)</h2>
+        <div class="box visible">
+            <p>This is a small box with a lot of text. The content overflows the box's boundaries, but it remains visible. This is the default behavior. The text will simply spill out of the container without being cut off. You can still see and read all of the content.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>`overflow: hidden`</h2>
+        <div class="box hidden">
+            <p>This box has a lot of text. Any content that overflows the box's boundaries is clipped and becomes invisible. The overflowing content is simply cut off and cannot be seen or accessed.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>`overflow: scroll`</h2>
+        <div class="box scroll">
+            <p>This box has a lot of text. The `overflow: scroll` property adds scrollbars to the container, allowing you to scroll through the overflowing content. Scrollbars will appear on both the horizontal and vertical axes, even if only one is needed.</p>
+            <p>This is a second paragraph to ensure there is enough content to demonstrate the scrolling functionality effectively. This is a very useful way to contain a lot of information in a small space without cluttering the main layout.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>`overflow: auto`</h2>
+        <div class="box auto">
+            <p>This box has a lot of text. The `overflow: auto` property adds scrollbars only when necessary. If the content fits, no scrollbars are shown. If the content overflows, scrollbars will appear on the necessary axes (e.g., vertical scrollbar for vertical overflow).</p>
+            <p>This is a second paragraph to ensure there is enough content to demonstrate the scrolling functionality effectively. This is a very clean and efficient way to handle potential overflow.</p>
+        </div>
+    </div>
+
+</body>
+</html>

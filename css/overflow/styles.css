@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.box {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #e0f7fa;
+    border: 1px solid #00acc1;
+}
+
+/* 1. overflow: visible (Default) */
+.visible {
+    overflow: visible;
+}
+
+/* 2. overflow: hidden */
+.hidden {
+    overflow: hidden;
+}
+
+/* 3. overflow: scroll */
+.scroll {
+    overflow: scroll;
+}
+
+/* 4. overflow: auto */
+.auto {
+    overflow: auto;
+}

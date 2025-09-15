@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Understanding CSS `position` Property</h1>
+
+    <div class="container static-container">
+        <h2>position: static</h2>
+        <p>This is the default position for all elements. Static elements are not affected by `top`, `bottom`, `left`, or `right` properties. They are positioned according to the normal document flow.</p>
+        <div class="box static-box">Static Box</div>
+    </div>
+
+    <div class="container relative-container">
+        <h2>position: relative</h2>
+        <p>A relatively positioned element is positioned relative to its normal position. You can use `top`, `bottom`, `left`, and `right` to shift it. The space it would have occupied remains in the document flow.</p>
+        <div class="box relative-box">Relative Box</div>
+    </div>
+
+    <div class="container absolute-container">
+        <h2>position: absolute</h2>
+        <p>An absolutely positioned element is positioned relative to its **nearest positioned ancestor** (not static). If no such ancestor exists, it's positioned relative to the initial containing block (the `<html>` element). It's taken out of the normal document flow, so other elements will behave as if it isn't there.</p>
+        <div class="box absolute-box">Absolute Box</div>
+    </div>
+
+    <div class="fixed-container">
+        <h2>position: fixed</h2>
+        <p>A fixed element is positioned relative to the viewport. This means it always stays in the same place, even if the page is scrolled. It's also taken out of the normal document flow.</p>
+        <div class="box fixed-box">Fixed Box</div>
+    </div>
+    
+    <div style="height: 1500px; padding: 20px;">
+        <p>Scroll down to see the fixed element in action.</p>
+    </div>
+
+</body>
+</html>
