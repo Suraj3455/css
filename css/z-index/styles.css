@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+.container {
+    position: relative; /* This creates a stacking context for its children */
+    width: 350px;
+    height: 350px;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #333;
+    position: absolute; /* z-index only works on positioned elements */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.box1 {
+    background-color: #ffcccc;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* This box will be in the back */
+}
+
+.box2 {
+    background-color: #ccffcc;
+    top: 60px;
+    left: 60px;
+    z-index: 3; /* This box will be in the front */
+}
+
+.box3 {
+    background-color: #ccccff;
+    top: 100px;
+    left: 100px;
+    z-index: 2; /* This box will be in the middle */
+}

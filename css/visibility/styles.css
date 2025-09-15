@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.example-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* This box is fully visible by default, but we set the property for clarity. */
+.visible-box {
+    background-color: #ccffcc;
+    visibility: visible;
+}
+
+/* This box is hidden, but its space remains on the page. */
+.hidden-box {
+    background-color: #ffcccc;
+    visibility: hidden;
+}
