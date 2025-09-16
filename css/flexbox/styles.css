@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* The flex container */
+.flex-container {
+    /* 1. display: flex */
+    display: flex;
+
+    /* 2. flex-direction */
+    /* Try changing to row-reverse, column, or column-reverse */
+    flex-direction: row-reverse;
+
+    /* 3. flex-wrap */
+    /* Try changing to wrap or wrap-reverse */
+    flex-wrap: nowrap;
+
+    /* 4. justify-content */
+    /* Try changing to flex-end, center, space-between, space-around, or space-evenly */
+    justify-content: space-evenly;
+
+    /* 5. align-items */
+    /* Try changing to flex-start, flex-end, center, or stretch */
+    align-items: center;
+
+    /* 6. align-content */
+    /* Only works when flex-wrap is set to 'wrap' */
+    /* Try changing to flex-start, flex-end, center, space-between, or space-around */
+    align-content: stretch;
+
+
+    /* Style for the container itself */
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    border: 3px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* The flex items */
+.flex-item {
+    background-color: #007bff;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+} */

@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Default alignment for items */
+
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    border: 3px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flex-item {
+    background-color: #007bff;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+/* Flex Item Properties */
+
+/* 1. order: Changes the display order of items. */
+.item-1 {
+    order: 3; /* Item 1 will now appear after items with order 0 or 1 */
+}
+
+.item-3 {
+    order: -1; /* This item will appear first regardless of its position in the HTML */
+}
+
+/* 2. flex-grow: Defines how much a flex item will grow relative to others. */
+.item-2 {
+    flex-grow: 2; /* Item 2 will grow twice as much as the others to fill available space */
+}
+
+/* 3. flex-shrink: Defines how much a flex item will shrink relative to others. */
+.item-4 {
+    flex-shrink: 0; /* Prevents this item from shrinking at all */
+}
+
+/* 4. flex-basis: Sets the initial size of a flex item. */
+.item-5 {
+    flex-basis: 200px; /* This item will start with a base width of 200px */
+}
+
+/* 5. align-self: Overrides the container's align-items for a single item. */
+.item-3 {
+    align-self: center; /* This item will be centered on the cross axis, even if others aren't */
+}
