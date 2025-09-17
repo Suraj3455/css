@@ -1,0 +1,99 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #0cde13;
+    color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* 1. Grid Container & Template */
+/* display: grid creates a block-level grid container */
+/* display: inline-grid would make it sit inline with other elements */
+.main-grid {
+    display: grid;
+    /* grid-template-rows creates named rows and sets their heights.
+       grid-template-columns sets three columns with different widths.
+       fr (fractional unit) allocates available space. 3fr is three times bigger than 1fr. */
+    grid-template-rows: [header-start] 100px [header-end content-start] 1fr [content-end footer-start] 70px [footer-end];
+    grid-template-columns: 200px 3fr 1fr;
+    /* grid-template-areas defines a named grid layout for easier placement */
+    grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+    gap: 15px; /* Shorthand for row-gap and column-gap */
+    margin-bottom: 40px;
+}
+
+/* 2. Grid Item Placement */
+/* Items are placed using grid-area, which references the names in grid-template-areas */
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* You can also place items manually without grid-template-areas */
+.some-item {
+    /* Starts at the 2nd column line, and spans across 2 columns */
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
+
+/* 3. Gap */
+.main-grid {
+    /* Separating the gap properties for clarity */
+    row-gap: 15px;
+    column-gap: 10px;
+}
+
+/* 4. Fractional Units (fr) */
+/* Already demonstrated in .main-grid columns: 200px 3fr 1fr */
+
+/* 5. Auto-fit & Auto-fill */
+.auto-grid {
+    display: grid;
+    /* grid-template-columns with repeat() and auto-fit/auto-fill creates a responsive grid */
+    /* auto-fit will 'fit' as many columns as possible on one line.
+       auto-fill would fill the line with empty tracks if there aren't enough items. */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+/* 6. Subgrid */
+/* The .content item itself becomes a grid container for its own items */
+.subgrid-container {
+    display: grid;
+    /* subgrid tells the parent grid (.content) to share its grid tracks */
+    /* This makes the subgrid's items align with the main grid's tracks */
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    gap: 10px;
+    background-color: #267972;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.subgrid-item {
+    background-color: #23ffe9;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

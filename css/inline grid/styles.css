@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Styles for the inline-grid container */
+.inline-grid-container {
+    /* The key property: makes the container an inline-level grid */
+    display: inline-grid;
+    grid-template-columns: auto auto; /* Two columns that size based on content */
+    gap: 10px; /* Space between grid items */
+    background-color: #e0f7fa; /* Light blue background for the container */
+    padding: 10px;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    vertical-align: top; /* Aligns the grid container to the top of the line */
+}
+
+/* Styles for the grid items */
+.grid-item {
+    background-color: #32e7ff; /* A teal color for the items */
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+p {
+    margin-top: 20px;
+}

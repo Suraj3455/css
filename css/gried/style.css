@@ -1,0 +1,27 @@
+/* General styles for the grid items */
+.grid-item {
+    background-color: #4CAF50; /* A pleasant shade of green */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+/* Container with display: grid
+  This is a block-level container.
+*/
+.grid-container {
+    display: grid;
+    /* Defines three columns, each 100 pixels wide */
+    grid-template-columns: 100px 100px 100px;
+    /* Defines two rows, each 50 pixels tall */
+    grid-template-rows: 50px 50px;
+    /* A small gap between the grid items */
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 20px;
+}
+
+
