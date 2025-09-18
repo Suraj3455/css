@@ -1,0 +1,121 @@
+/* General Setup and existing code... */
+:root {
+    font-size: 16px; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* This is a basic box-shadow */
+    text-align: center;
+    width: 90%; 
+}
+
+.box h2 {
+    font-size: 5vw;
+    color: #555;
+    margin-top: 0;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.box-2 {
+    width: min(90%, 500px); 
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    background-color: #e6f7ff;
+}
+
+/* 🔵 Box-Shadow and Text-Shadow */
+
+/* A more pronounced box-shadow for a specific effect */
+.responsive-shadow {
+    /* The order of values is:
+    1. Horizontal offset (x): 0px
+    2. Vertical offset (y): 10px
+    3. Blur radius: 20px
+    4. Spread radius (optional): 5px
+    5. Color: rgba(0, 0, 0, 0.2)
+    */
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.shadow-text {
+    /*
+    The order of values is:
+    1. Horizontal offset (x): 2px
+    2. Vertical offset (y): 2px
+    3. Blur radius: 4px
+    4. Color: #333333
+    */
+    text-shadow: 2px 2px 4px #333333;
+}
+
+/* You can also use multiple shadows separated by commas */
+.box-3 h3 {
+    text-shadow: 1px 1px 2px #ccc, 
+                 -1px -1px 2px #555;
+    font-size: 1.5rem;
+}
+
+/* 🔵 Media Queries */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .box {
+        width: 45%; 
+    }
+
+    .box-1 {
+        background-color: #d4edda; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .box {
+        width: 30%; 
+    }
+
+    .box-3 {
+        background-color: #fff3cd; 
+    }
+}

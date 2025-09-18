@@ -1,0 +1,156 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* 🔵 Borders & Border-Radius */
+.border-radius-example {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6347;
+    margin: 1rem auto;
+    /* Defines a solid 3px border */
+    border: 3px solid #333;
+    /* Rounds all corners with a single value */
+    border-radius: 25px;
+    /* Adds a drop shadow */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* Applies a shadow to the text */
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* 🔵 Filters (blur, brightness, contrast, grayscale) */
+.filter-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.filter-gallery img {
+    width: 100px;
+    height: 100px;
+}
+
+.filter-original {
+    /* No filter applied */
+}
+
+.filter-blur {
+    /* Applies a 5px blur effect */
+    filter: blur(5px);
+}
+
+.filter-grayscale {
+    /* Converts the image to grayscale (100% saturation removal) */
+    filter: grayscale(100%);
+    /* You can chain multiple filters */
+    filter: grayscale(100%) brightness(120%);
+}
+
+/* 🔵 Object-Fit & Object-Position */
+.object-fit-container {
+    height: 200px;
+    border: 2px dashed #999;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.object-fit-container img {
+    width: 150px;
+    height: 100%;
+}
+
+.object-fit-cover {
+    /* The image scales to fill the container, cropping parts that don't fit */
+    object-fit: cover;
+    /* Positions the 'covered' part of the image to the top */
+    object-position: top;
+}
+
+.object-fit-contain {
+    /* The image scales down to fit within the container, preserving aspect ratio */
+    object-fit: contain;
+    /* Positions the 'contained' image to the right */
+    object-position: right;
+}
+
+/* 🔵 Mix-Blend-Mode */
+.blend-container {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background-color: #f0f8ff;
+    overflow: hidden;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+}
+
+.blended-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 120%;
+    height: 120%;
+    background-color: #ff69b4;
+    /* The blend mode mixes the color of this element with its backdrop */
+    mix-blend-mode: multiply;
+}
+
+.blended-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4682b4;
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* Mixes the text color with the color of the background */
+    mix-blend-mode: difference;
+}
+
+/* 🔵 Clip-Path & Mask */
+.clip-path-example {
+    width: 150px;
+    height: 150px;
+    background-color: #4682b4;
+    margin: 1rem auto;
+    /* Creates a polygon shape with a custom path */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* Note: Masking is a more complex property, often using SVG or images.
+   A basic example is below, but it's often more advanced. */
+/* .mask-example {
+    -webkit-mask-image: linear-gradient(to right, black, transparent);
+    mask-image: linear-gradient(to right, black, transparent);
+} */
