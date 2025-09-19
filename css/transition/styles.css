@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Transitions --- */
+.transition-box {
+    background-color: #3498db;
+    /* Transition properties */
+    transition-property: background-color, transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.9s;
+}
+
+.transition-box:hover {
+    background-color: #ff1900;
+    /* Transforms for transition */
+    transform: translate(20px, -10px) rotate(15deg) scale(1.1);
+}
+
+/* --- Transforms (Static) --- */
+.transform-box {
+    background-color: #2ecc71;
+    /* Static transform properties */
+    transform: matrix(1, -0.3, 0, 1, 0, 0) scale(1.2);
+}
+
+/* --- Animations --- */
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(100deg);
+        background-color: #9b59b6;
+    }
+    50% {
+        transform: scale(1.2) rotate(80deg);
+        background-color: #8e44ad;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        background-color: #9b59b6;
+    }
+}
+
+.animation-box {
+    background-color: #9b59b6;
+    /* Animation properties */
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-play-state: running;
+}
+
+.animation-box:hover {
+    animation-play-state: paused;
+}
