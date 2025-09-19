@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blend-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 100px;
+}
+
+.square-base {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733; /* A warm orange-red */
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #33aaff; /* A cool blue */
+    border-radius: 50%;
+    /* The mix-blend-mode property is applied directly in the HTML for each circle */
+}
+
+.label {
+    position: absolute;
+    left: 170px;
+    width: 130px;
+    font-weight: bold;
+    color: #333;
+}
