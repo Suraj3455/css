@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    gap: 40px;
+    padding: 20px;
+}
+
+.clipped-box {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 1. Polygon shape (Diamond) */
+.polygon-shape {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* 2. Circle shape */
+.circle-shape {
+    clip-path: circle(40% at 50% 50%);
+}
+
+/* 3. Ellipse shape (Oval) */
+.ellipse-shape {
+    clip-path: ellipse(40% 50% at 50% 50%);
+}
+
+/* 4. Inset shape (Rounded rectangle) */
+.inset-shape {
+    clip-path: inset(10% round 20px  10px 50px  90px);
+}
