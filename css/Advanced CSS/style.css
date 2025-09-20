@@ -1,0 +1,130 @@
+/*
+ * 🔴 CSS Cascade Layers
+ * Used to manage the cascade, ensuring author styles
+ * don't unexpectedly override library/framework styles.
+ */
+@layer reset, components, utilities;
+
+@layer reset {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@layer components {
+    /*
+     * 🔴 CSS Nesting (new spec) & :is()
+     * This nested CSS is a more concise way to write styles.
+     * The :is() pseudo-class simplifies selectors by grouping them.
+     * The specificity of :is() is determined by its most specific argument.
+     */
+    .card {
+        padding: 1rem;
+        border: 2px solid #333;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        
+        &:has(p) { /* 🔴 :has() relational pseudo-class */
+          /* Selects a .card that contains a paragraph element. */
+          background-color: #6eb7f7;
+        }
+
+        &.special {
+            border-color: gold;
+
+            &:is(div) p { /* 🔴 :is() and :where() selectors */
+                /* Selects a paragraph inside an element that is both a div and a special card.
+                 * This is a simple example; :is() is powerful for more complex grouping.
+                 */
+                font-weight: bold;
+                color: purple;
+            }
+        }
+    }
+}
+
+@layer utilities {
+    /* 🔴 CSS Specificity & Inheritance
+     * This utility class has high specificity.
+     * The color property will override the inherited color from the parent.
+     */
+    .special p {
+        color: darkred; /* High specificity selector */
+    }
+}
+
+/*
+ * 🔴 Logical Properties & Writing Modes
+ * These properties are direction-agnostic and adjust based on the writing mode.
+ */
+.logical-box {
+    writing-mode: sideways-rl; /* 🔴 Writing modes & text-orientation */
+    text-orientation: sideways-right; /* Ensures text is readable in sideways mode */
+    border: 2px solid green;
+    padding-block: 2rem;   /* Top/bottom padding in horizontal mode */
+    padding-inline: 1rem;  /* Left/right padding in horizontal mode */
+    margin-inline-start: 2rem;
+    height: 15rem;
+}
+
+/* 🔴 Aspect-ratio */
+.box.with-image {
+    aspect-ratio: 1 / 5; /* Ensures the box remains a perfect square */
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/*
+ * 🔴 Scroll Snapping
+ * Makes the scroll container "snap" to specific scroll points.
+ */
+.scroll-container {
+    height: 300px;
+    width: 100%;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+}
+
+.snap-item {
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #aaa;
+    scroll-snap-align: start;
+}
+
+/* 🔴 CSS Shapes (basic example) */
+.section-3 {
+  /* Using a basic shape for demonstration */
+  float: left;
+  shape-outside: circle(50%);
+  width: 200px;
+  height: 200px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff1515, #00e5ff);
+  /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 200px; */
+}

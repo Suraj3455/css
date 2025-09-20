@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Advanced CSS Showcase</h1>
+    </header>
+
+    <div class="container">
+
+        <section class="section-1">
+            <h2>Specificity, Nesting & `:is()`</h2>
+            <div class="card">
+                <p>This paragraph is within a card.</p>
+            </div>
+            <div class="card special">
+                <p>This is a <span>special</span> card.</p>
+            </div>
+            <p>This is a general paragraph.</p>
+        </section>
+
+        <hr>
+
+        <section class="section-2">
+            <h2>Logical Properties & Writing Modes</h2>
+            <div class="block">
+                <p class="logical-box">
+                    This text uses logical properties for spacing and a vertical writing mode.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section-3">
+            <h2>`:has()` & Aspect Ratio</h2>
+            <div class="grid">
+                <div class="box">
+                    <p>Box with content</p>
+                </div>
+                <div class="box no-content"></div>
+                <div class="box with-image">
+                    <img src="https://via.placeholder.com/150" alt="Placeholder image">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section-4">
+            <h2>Scroll Snapping</h2>
+            <div class="scroll-container">
+                <div class="snap-item"><h2>Item 1</h2></div>
+                <div class="snap-item"><h2>Item 2</h2></div>
+                <div class="snap-item"><h2>Item 3</h2></div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
